@@ -1,0 +1,262 @@
+@charset 'utf-8';
+
+body{
+	--mainCol: #c6b683;
+}
+
+html {
+    -webkit-text-size-adjust: none;
+}
+
+body *{
+	word-break: keep-all;
+	letter-spacing: -0.025em;
+}
+
+/* 도현체 */
+@font-face {
+    font-family: 'BMDOHYEON';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_one@1.0/BMDOHYEON.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body{
+	font-family: 'BMDOHYEON';
+	background: #f8f8f8;
+}
+
+#wrap{
+	width: 100%;
+	max-width: 720px;
+	margin: auto;
+}
+
+/* common */
+.inner{
+	width: 90%;
+	max-width: 1280px;
+	margin: auto;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family: 'BMDOHYEON';
+	letter-spacing: 1px;
+}
+
+/* section */
+.section{
+	background: #fff;
+	box-sizing: border-box;
+	padding: 20px 0;
+	border: 1px solid #efefef;
+}
+
+.section + .section{
+	margin-top: 15px;
+}
+
+.section h2{
+	color: #888;
+	font-size: 16px;
+	font-weight: normal;
+	line-height: 1;
+	margin-bottom: 20px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.section h2 .linkA{
+	font-size: 14px;
+}
+
+.section h3{
+	font-size: 20px;
+	line-height: 1.3;
+}
+
+.section h3 + h3{
+	margin-top: 12px;
+}
+
+.section .btn{
+	width: 100%;
+	height: 50px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-size: 16px;
+	border: 1px solid #333;
+	padding-top: 4px;
+	margin-top: 25px;
+}
+
+/* checkin */
+.checkin .inner{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.checkin .inner .inBox.right{
+	text-align: right;
+}
+
+.checkin .inner .inBox.right h2{
+	justify-content: flex-end;
+}
+
+/* infoUl */
+.infoUl li{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.infoUl li + li{
+	margin-top: 12px;
+}
+
+.infoUl li h3{
+	font-weight: normal;
+	font-size: 18px;
+}
+
+.infoUl li p{
+	font-size: 20px;
+	font-weight: bold;
+}
+
+/* listUl */
+.listUl li{
+	font-size: 18px;
+	line-height: 1.3;
+	position: relative;
+	box-sizing: border-box;
+	padding-left: 20px;
+}
+
+.listUl li::before{
+	content: 'ㆍ';
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-weight: bold;
+}
+
+.listUl li + li{
+	margin-top: 12px;
+}
+
+/* imgSection */
+.imgSection .inner{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+}
+
+.imgSection .inner .imgBox{
+	width: 20%;
+}
+
+.imgSection .inner .imgBox img{
+	width: 100%;
+}
+
+.imgSection .inner .txtBox{
+	width: calc(80% - 20px);
+}
+
+.imgSection .inner .txtBox a{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border: 1px solid #333;
+	padding: 15px 0 12px;
+}
+
+.imgSection .inner .txtBox a + p{
+	margin-top: 15px;
+}
+
+@media screen and (max-width: 480px){
+
+@charset 'utf-8';
+
+/* section */
+.section{
+	padding: 5vw 0;
+}
+
+.section + .section{
+	margin-top: 3vw;
+}
+
+.section h2{
+	font-size: 3.5vw;
+	margin-bottom: 5vw;
+}
+
+.section h2 .linkA{
+	font-size: 3.5vw;
+}
+
+.section h3{
+	font-size: 4.5vw;
+}
+
+.section h3 + h3{
+	margin-top: 2vw;
+}
+
+.section .btn{
+	height: 10vw;
+	font-size: 3.5vw;
+	padding-top: 1vw;
+	margin-top: 4vw;
+}
+
+/* infoUl */
+.infoUl li + li{
+	margin-top: 2vw;
+}
+
+.infoUl li h3{
+	font-size: 4vw;
+}
+
+.infoUl li p{
+	font-size: 4.5vw;
+}
+
+/* listUl */
+.listUl li{
+	font-size: 3.5vw;
+	padding-left: 4vw;
+}
+
+.listUl li + li{
+	margin-top: 2vw;
+}
+
+/* imgSection */
+.imgSection .inner .imgBox{
+	width: 25%;
+}
+
+.imgSection .inner .txtBox{
+	width: calc(75% - 20px);
+}
+
+.imgSection .inner .txtBox a{
+	padding: 3.5vw 0 2.8vw;
+}
+
+.imgSection .inner .txtBox a + p{
+	margin-top: 4vw;
+	font-size: 3.5vw;
+}
+
+}
